@@ -3,8 +3,8 @@ package rivescript_test
 import (
 	"fmt"
 
-	"codecloud.web.att.com/users/rx7322/rivescript-go"
-	"github.com/aichaos/rivescript-go/lang/javascript"
+	"github.com/rmasci/rivescript-go"
+	"github.com/rmasci/rivescript-go/lang/javascript"
 )
 
 func Example() {
