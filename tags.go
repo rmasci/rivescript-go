@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"strings"
 
-	"codecloud.web.att.com/users/rx7322/rivescript-go/sessions"
+	"github.com/rmasci/rivescript-go/sessions"
 )
 
 // formatMessage formats a user's message for safe processing.

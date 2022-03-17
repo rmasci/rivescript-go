@@ -19,11 +19,11 @@ import (
 	"sync"
 	"time"
 
-	"codecloud.web.att.com/users/rx7322/rivescript-go/macro"
-	"codecloud.web.att.com/users/rx7322/rivescript-go/parser"
-	"codecloud.web.att.com/users/rx7322/rivescript-go/sessions"
-	"codecloud.web.att.com/users/rx7322/rivescript-go/sessions/memory"
-	"codecloud.web.att.com/users/rx7322/rivescript-go/sessions/skv"
+	"github.com/rmasci/rivescript-go/macro"
+	"github.com/rmasci/rivescript-go/parser"
+	"github.com/rmasci/rivescript-go/sessions"
+	"github.com/rmasci/rivescript-go/sessions/memory"
+	"github.com/rmasci/rivescript-go/sessions/skv"
 )
 
 // Version number for the RiveScript library.
@@ -74,7 +74,7 @@ A RiveScript instance represents one chat bot personality; it has its own
 replies and its own memory of user data. You could make multiple bots in the
 same program, each with its own replies loaded from different sources.
 */
-func New(cfg *Config,) (rs *RiveScript, err error) {
+func New(cfg *Config) (rs *RiveScript, err error) {
 	// If no config was given, default to the BasicConfig.
 
 	if cfg == nil {
@@ -93,15 +93,15 @@ func New(cfg *Config,) (rs *RiveScript, err error) {
 			cfg.SessionManager, err = skv.New(cfg.DBfile)
 			if err != nil {
 				fmt.Printf("Rivescript.go, Error Opening Database, deleting and try again. %v\n", err)
-				err:=os.Remove(cfg.DBfile)
+				err := os.Remove(cfg.DBfile)
 				if err != nil {
-					err=fmt.Errorf("Rivescript.go -- can't open or delete database. %v\n",err)
-					return rs,err
+					err = fmt.Errorf("Rivescript.go -- can't open or delete database. %v\n", err)
+					return rs, err
 				}
 				cfg.SessionManager, err = skv.New(cfg.DBfile)
 				if err != nil {
-					err=fmt.Errorf("Rivescript.go -- cant' open database 2nd try. %v\n",err)
-					return rs,err
+					err = fmt.Errorf("Rivescript.go -- cant' open database 2nd try. %v\n", err)
+					return rs, err
 				}
 			}
 
@@ -155,7 +155,7 @@ func New(cfg *Config,) (rs *RiveScript, err error) {
 		OnWarn:  rs.warnSyntax,
 	})
 
-	return rs,err
+	return rs, err
 }
 
 // Forms of undefined.

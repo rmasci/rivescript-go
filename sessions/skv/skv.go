@@ -5,8 +5,8 @@ import (
 	"strings"
 	"sync"
 
-	"codecloud.web.att.com/users/rx7322/rivescript-go/sessions"
 	"github.com/rapidloop/skv"
+	"github.com/rmasci/rivescript-go/sessions"
 )
 
 // Type MemoryStore implements the default in-memory session store for

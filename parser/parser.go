@@ -12,7 +12,7 @@ import (
 	"strconv"
 	"strings"
 
-	"codecloud.web.att.com/users/rx7322/rivescript-go/ast"
+	"github.com/rmasci/rivescript-go/ast"
 )
 
 const RS_VERSION float64 = 2.0
