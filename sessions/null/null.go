@@ -1,7 +1,7 @@
 // Package null provides a session manager that has no memory.
 package null
 
-import "codecloud.web.att.com/users/rx7322/rivescript-go/sessions"
+import "github.com/rmasci/rivescript-go/sessions"
 
 // Type NullStore implements a memory store that has no memory.
 //

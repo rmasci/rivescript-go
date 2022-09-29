@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"strings"
 
-	"codecloud.web.att.com/users/rx7322/rivescript-go/sessions"
+	"github.com/rmasci/rivescript-go/sessions"
 	redis "gopkg.in/redis.v5"
 )
 

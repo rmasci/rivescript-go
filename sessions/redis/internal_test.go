@@ -9,7 +9,7 @@ import (
 	"os"
 	"testing"
 
-	"codecloud.web.att.com/users/rx7322/rivescript-go/sessions"
+	"github.com/rmasci/rivescript-go/sessions"
 )
 
 // newTest creates a new test environment with a new Redis prefix.

@@ -11,7 +11,7 @@ import (
 
 	yaml "gopkg.in/yaml.v2"
 
-	rivescript "codecloud.web.att.com/users/rx7322/rivescript-go"
+	rivescript "github.com/rmasci/rivescript-go"
 )
 
 // TestCase wraps each RiveScript test.

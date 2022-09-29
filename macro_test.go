@@ -11,8 +11,8 @@ package rivescript_test
 import (
 	"testing"
 
-	rivescript "codecloud.web.att.com/users/rx7322/rivescript-go"
-	"codecloud.web.att.com/users/rx7322/rivescript-go/lang/javascript"
+	rivescript "github.com/rmasci/rivescript-go"
+	"github.com/rmasci/rivescript-go/lang/javascript"
 )
 
 // This one has to test the public interface because of the JavaScript handler

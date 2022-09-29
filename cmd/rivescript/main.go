@@ -23,8 +23,8 @@ import (
 	"os"
 	"strings"
 
-	"codecloud.web.att.com/users/rx7322/rivescript-go"
-	"codecloud.web.att.com/users/rx7322/rivescript-go/lang/javascript"
+	"github.com/rmasci/rivescript-go"
+	"github.com/rmasci/rivescript-go/lang/javascript"
 )
 
 // Build is the git commit hash that the binary was built from.

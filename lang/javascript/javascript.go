@@ -8,8 +8,8 @@ compatibility issues to arise.
 Usage is simple. In your Golang code:
 
 	import (
-		rivescript "codecloud.web.att.com/users/rx7322/rivescript-go"
-		"codecloud.web.att.com/users/rx7322/rivescript-go/lang/javascript"
+		rivescript "github.com/rmasci/rivescript-go"
+		"github.com/rmasci/rivescript-go/lang/javascript"
 	)
 
 	func main() {

@@ -3,9 +3,9 @@ package redis_test
 import (
 	"testing"
 
-	rivescript "codecloud.web.att.com/users/rx7322/rivescript-go"
-	"codecloud.web.att.com/users/rx7322/rivescript-go/sessions"
-	"codecloud.web.att.com/users/rx7322/rivescript-go/sessions/redis"
+	rivescript "github.com/rmasci/rivescript-go"
+	"github.com/rmasci/rivescript-go/sessions"
+	"github.com/rmasci/rivescript-go/sessions/redis"
 )
 
 // This script tests the 'integration' of the RiveScript public API with the

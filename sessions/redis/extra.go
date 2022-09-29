@@ -7,7 +7,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"codecloud.web.att.com/users/rx7322/rivescript-go/sessions"
+	"github.com/rmasci/rivescript-go/sessions"
 )
 
 // key generates a key name to use in Redis.
